@@ -1,0 +1,229 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 100C Model Setup 'i_clk'
+Slack : 4.362
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Setup 'altera_reserved_tck'
+Slack : 10.099
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Setup 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 16.469
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'i_clk'
+Slack : -0.047
+TNS   : -0.940
+
+Type  : Slow 1100mV 100C Model Hold 'altera_reserved_tck'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.429
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Recovery 'i_clk'
+Slack : 11.695
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Recovery 'altera_reserved_tck'
+Slack : 14.718
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Removal 'i_clk'
+Slack : 0.550
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Removal 'altera_reserved_tck'
+Slack : 0.870
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.925
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'i_clk'
+Slack : 8.825
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.395
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 17.096
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Setup 'i_clk'
+Slack : 4.247
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Setup 'altera_reserved_tck'
+Slack : 10.267
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Setup 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 16.424
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'i_clk'
+Slack : -0.073
+TNS   : -1.460
+
+Type  : Slow 1100mV -40C Model Hold 'altera_reserved_tck'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Recovery 'i_clk'
+Slack : 12.170
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Recovery 'altera_reserved_tck'
+Slack : 14.923
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Removal 'i_clk'
+Slack : 0.505
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Removal 'altera_reserved_tck'
+Slack : 0.808
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.925
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'i_clk'
+Slack : 8.784
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.420
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 17.067
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Setup 'i_clk'
+Slack : 11.352
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Setup 'altera_reserved_tck'
+Slack : 13.486
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Setup 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 26.225
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'i_clk'
+Slack : 0.020
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'altera_reserved_tck'
+Slack : 0.168
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Recovery 'i_clk'
+Slack : 14.373
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Recovery 'altera_reserved_tck'
+Slack : 16.115
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Removal 'i_clk'
+Slack : 0.278
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Removal 'altera_reserved_tck'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.925
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'i_clk'
+Slack : 8.489
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.355
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 17.400
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Setup 'i_clk'
+Slack : 12.727
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Setup 'altera_reserved_tck'
+Slack : 14.086
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Setup 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 27.694
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'i_clk'
+Slack : -0.010
+TNS   : -0.200
+
+Type  : Fast 1100mV -40C Model Hold 'altera_reserved_tck'
+Slack : 0.125
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Recovery 'i_clk'
+Slack : 15.476
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Recovery 'altera_reserved_tck'
+Slack : 16.339
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Removal 'i_clk'
+Slack : 0.223
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Removal 'altera_reserved_tck'
+Slack : 0.275
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.925
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'i_clk'
+Slack : 8.419
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.375
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'telecran0|pll0|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 17.409
+TNS   : 0.000
+
+------------------------------------------------------------

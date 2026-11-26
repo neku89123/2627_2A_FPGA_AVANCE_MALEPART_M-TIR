@@ -1,0 +1,9 @@
+C:/Users/alexa/Desktop/2A/FPGA_avance/TP/tp_nios_v/soft/app/build/CMakeFiles/app.elf.dir
+C:/Users/alexa/Desktop/2A/FPGA_avance/TP/tp_nios_v/soft/app/build/CMakeFiles/create-objdump.dir
+C:/Users/alexa/Desktop/2A/FPGA_avance/TP/tp_nios_v/soft/app/build/CMakeFiles/niosv-stack-report.dir
+C:/Users/alexa/Desktop/2A/FPGA_avance/TP/tp_nios_v/soft/app/build/CMakeFiles/create-hex.dir
+C:/Users/alexa/Desktop/2A/FPGA_avance/TP/tp_nios_v/soft/app/build/CMakeFiles/edit_cache.dir
+C:/Users/alexa/Desktop/2A/FPGA_avance/TP/tp_nios_v/soft/app/build/CMakeFiles/rebuild_cache.dir
+C:/Users/alexa/Desktop/2A/FPGA_avance/TP/tp_nios_v/soft/app/build/bsp/CMakeFiles/hal2_bsp.dir
+C:/Users/alexa/Desktop/2A/FPGA_avance/TP/tp_nios_v/soft/app/build/bsp/CMakeFiles/edit_cache.dir
+C:/Users/alexa/Desktop/2A/FPGA_avance/TP/tp_nios_v/soft/app/build/bsp/CMakeFiles/rebuild_cache.dir

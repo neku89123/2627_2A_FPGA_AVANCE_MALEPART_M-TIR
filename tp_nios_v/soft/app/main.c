@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <stdint.h>
+#include <unistd.h> // for usleep
+
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "altera_avalon_i2c.h"
+
+#define LED_COUNT 10
+#define DELAY_US 50000
+
+#define ADXL345_ADDR  0x53
+#define REG_DEVID     0x00
+#define REG_POWER_CTL 0x2D
+#define REG_DATAX0    0x32
+#define ONE_G 256
+
+int main(void){
+	ALT_AVALON_I2C_DEV_t *i2c_dev;
+	alt_u8 txbuffer[2];
+	alt_u8 rxbuffer[6];
+	int16_t x, y, z;
+	int led;
+
+	printf("Niveau a bulle\r\n");
+
+	i2c_dev = alt_avalon_i2c_open(I2C_0_NAME);
+	if(i2c_dev == NULL){
+		printf("Erreur : I2C introuvable\r\n");
+		return 1;
+	}
+	alt_avalon_i2c_master_target_set(i2c_dev, ADXL345_ADDR);
+
+	txbuffer[0] = REG_DEVID;
+	alt_avalon_i2c_master_tx_rx(i2c_dev, txbuffer, 1, rxbuffer, 1, ALT_AVALON_I2C_NO_INTERRUPTS);
+	printf("DEVID = 0x%02X\r\n", rxbuffer[0]);
+
+	txbuffer[0] = REG_POWER_CTL;
+	txbuffer[1] = 0x08;
+	alt_avalon_i2c_master_tx(i2c_dev, txbuffer, 2, ALT_AVALON_I2C_NO_INTERRUPTS);
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_1_BASE, 0x01);
+	while(1){
+		txbuffer[0] = REG_DATAX0;
+		alt_avalon_i2c_master_tx_rx(i2c_dev, txbuffer, 1, rxbuffer, 6, ALT_AVALON_I2C_NO_INTERRUPTS);
+
+		x = (rxbuffer[1] << 8) + rxbuffer[0];
+		y = (rxbuffer[3] << 8) + rxbuffer[2];
+		z = (rxbuffer[5] << 8) + rxbuffer[4];
+		if(z < -200){                                     // carte retournee
+			IOWR_ALTERA_AVALON_PIO_DATA(PIO_1_BASE, 0x00);   // efface
+			usleep(10000);                                   // 10 ms (7 ms suffisent)
+			IOWR_ALTERA_AVALON_PIO_DATA(PIO_1_BASE, 0x01);   // relache
+		}
+		led = (x + ONE_G) * LED_COUNT / (2 * ONE_G);
+		if(led < 0){
+			led = 0;
+		}
+		if(led > LED_COUNT - 1){
+			led = LED_COUNT - 1;
+		}
+
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, 1 << led);
+
+		printf("x=%5d y=%5d z=%5d led=%d\r\n", x, y, z, led);
+		usleep(DELAY_US);
+	}
+	return 0;
+}
