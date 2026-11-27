@@ -400,8 +400,8 @@ Les broches des encodeurs et de la sortie HDMI sont identiques à celles du proj
 
 <!-- Glisser les vidéos dans l'éditeur GitHub pour obtenir un lien https://github.com/user-attachments/assets/… et le coller ici -->
 
-- [Vidéo 1](<WhatsApp Video 2026-11-26 at 11.44.49.mp4>) : Niveau à bulle
-- [Vidéo 2](<WhatsApp Video 2026-11-26 at 11.44.59.mp4>) : Effacement en retournant la carte
+- [Vidéo 1](<WhatsApp Video 2026-11-26 at 11.44.49.mp4>) : Effacement en retournant la carte
+- [Vidéo 2](<WhatsApp Video 2026-11-26 at 11.44.59.mp4>) : Niveau à bulle
 
 ---
 
